@@ -1,18 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Oswald:wght@200&family=Playfair+Display:ital@1&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 26, 26, 29; /* #1A1A1D */
+  --background-mid1-rgb: 78, 78, 80; /* #4E4E50 */
+  --background-mid2-rgb: 111, 34, 50; /* #6F2232 */
+  --background-mid3-rgb: 149, 7, 64; /* #950740 */
+  --background-end-rgb: 195, 7, 63; /* #C3073F */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 26, 26, 29; /* #1A1A1D */
+    --background-mid1-rgb: 78, 78, 80; /* #4E4E50 */
+    --background-mid2-rgb: 111, 34, 50; /* #6F2232 */
+    --background-mid3-rgb: 149, 7, 64; /* #950740 */
+    --background-end-rgb: 195, 7, 63; /* #C3073F */
   }
 }
 
@@ -20,8 +27,23 @@ body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
-      transparent,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-mid1-rgb)),
+      rgb(var(--background-mid2-rgb)),
+      rgb(var(--background-mid3-rgb)),
       rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    );
 }
+
+#anyone {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-mid1-rgb)),
+      rgb(var(--background-mid2-rgb)),
+      rgb(var(--background-mid3-rgb)),
+      rgb(var(--background-end-rgb))
+    );
+}
+
