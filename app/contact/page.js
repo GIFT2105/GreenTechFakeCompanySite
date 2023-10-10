@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Nav from '../components/nav';
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const [authenticated, setAuthenticated] = useState(false);
   const [activeCircle, setActiveCircle] = useState(1);
