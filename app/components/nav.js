@@ -25,7 +25,7 @@ const Nav = () => {
      border-white   flex flex-row items-center justify-center h-16 rounded-full gap-10    w-1/2  bg-black  '   >
     <Link className='flex' href="/">Home</Link>
     <Link href="/About">About</Link>
-    <Link href="/About">Our Mission</Link>
+    <Link href="/">Our Mission</Link>
     <Link href="/contact">Contact us</Link>
     {authenticated ? (
       <button onClick={handleLogout}>Logout</button>
