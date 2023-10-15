@@ -2,8 +2,8 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import Nav from '../components/nav';
-import Footer from '../components/footer';
+import Nav from '../../components/nav';
+import Footer from '../../components/footer';
 
 const page = () => {
   const router = useRouter();

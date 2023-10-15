@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import Nav from '../components/nav';
+import Nav from '../../components/nav';
 
 const Page = () => {
   const router = useRouter();
@@ -42,7 +42,7 @@ const Page = () => {
 <h1 className='text-2xl text-center mt-8    border-black   w-screen font-aBC  text-white '>GreenTech Innovations</h1>
 <h2 className='text-sm   text-center  border-black   w-screen font-aBC mt-1 mb-8  text-white '>
 "Empowering Tomorrow, Today: Innovate, Inspire, Impact!"</h2>
-<form className='flex flex-col gap-2 text-center'>
+<form className='flex flex-col gap-2 text-center text-black'>
 <input className='w-80 h-10 mt-4 text-center rounded-lg' type="text" id="fname" name="firstname" placeholder="First name.."></input>
 <input className='w-80 h-10 mt-4 text-center  rounded-lg' type="text" id="fname" name="secondname" placeholder="Last name.."></input>
 <input className='w-80 h-10 mt-4 text-center rounded-lg' type="email" id="email"  placeholder="Email"></input>
@@ -74,4 +74,4 @@ const Page = () => {
   )
 }
 
-export default page
+export default Page

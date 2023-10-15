@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { supabase } from '../supabase' // Import the initialized supabase instance
+import { supabase } from '../app/supabase' // Import the initialized supabase instance
 import { useRouter } from 'next/navigation';
 
 
@@ -13,6 +13,7 @@ const LoginRegistrationComponent = () => {
     const { user, error } = await supabase.auth.signIn({ email, password });
     if (error) {
       console.error('Error logging in:', error.message);
+      console.log('error message:', error.message);
     } else {
       // User authenticated, store in local storage
       localStorage.setItem('authenticated', 'true');
@@ -25,6 +26,7 @@ const LoginRegistrationComponent = () => {
     const { user, error } = await supabase.auth.signUp({ email, password });
     if (error) {
       console.error('Error registering user:', error.message);
+      console.log('error message:', error.message);
     } else {
       // User registered and authenticated, store in local storage
       localStorage.setItem('authenticated', 'true');

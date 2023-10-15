@@ -1,7 +1,7 @@
 import React from 'react'
-import LoginRegistrationComponent from '../components/register'
-import Nav from '../components/nav'
-import Footer from '../components/footer'
+import LoginRegistrationComponent from '../../components/register'
+import Nav from '../../components/nav'
+import Footer from '../../components/footer'
 
 
 const page = () => {

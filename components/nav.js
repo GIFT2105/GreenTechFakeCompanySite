@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
+
 const Nav = () => {
   const router = useRouter();
   const [authenticated, setAuthenticated] = useState(false);
@@ -24,7 +25,7 @@ const Nav = () => {
     <nav className='font-aBC text-xl border-2 mt-10 mb-10
      border-white   flex flex-row items-center justify-center h-16 rounded-full gap-10    w-1/2  bg-black  '   >
     <Link className='flex' href="/">Home</Link>
-    <Link href="/About">About</Link>
+    <Link href={"About"}>About</Link>
     <Link href="/">Our Mission</Link>
     <Link href="/contact">Contact us</Link>
     {authenticated ? (

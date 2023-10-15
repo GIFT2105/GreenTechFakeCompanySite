@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Nav from './components/nav'
+import Nav from '../components/nav'
 import exampleImage from '../public/pexels-dom-j-310435.jpg'; 
 import Link from 'next/link';
 
